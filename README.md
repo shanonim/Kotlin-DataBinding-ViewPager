@@ -5,4 +5,4 @@ ViewPager sample using Kotlin and DataBinding.
 - Android Studio 3.0 Canary 4
 
 ## Screenshots
-<img src="http://i.imgur.com/Tjwp7YU.gif" width="320px">
+<img src="https://github.com/shanonim/Kotlin-DataBinding-ViewPager/blob/master/contents/app.gif" width="400px">
