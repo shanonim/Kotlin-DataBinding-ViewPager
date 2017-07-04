@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="com.shanonim.viewpagersample.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_next" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/pageIndicatorView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-20dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="next"
+            android:textColor="@android:color/white" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            attrs:piv_animationType="slide"
+            attrs:piv_interactiveAnimation="true"
+            attrs:piv_padding="15dp"
+            attrs:piv_radius="5dp"
+            attrs:piv_selectedColor="@android:color/holo_orange_dark"
+            attrs:piv_unselectedColor="@android:color/holo_orange_light"
+            attrs:piv_viewPager="@id/view_pager" />
+
+    </RelativeLayout>
+</layout>
